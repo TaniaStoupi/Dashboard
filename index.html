@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="title">
+        <h2>My Dashboard</h2>
+    </div>
+
+    <div class="container">
+        <div class="to-do-list">
+            <div class="board">
+                <h4 id="title-board">My Tasks</h4>
+                <div class="task-board">
+                  
+                </div>
+            </div>
+            <div class="manage-list">
+                <h4 class="manage-title">Manage Tasks</h4>
+                <div class="add-task">
+                    <input type="text" id="task" required>
+                    <label for="task" id="task-label">Add your task</label>
+                    <button class="btn-add-task">Add</button>
+                </div>
+            </div>
+        </div>
+        <div class="quote-board">
+            <h4 class="title-quote">Today's Quote</h4>
+            <div class="quote"></div>
+            <button class="btn-generate">Generate</button>
+        </div>
+        <div class="timer-board">
+            <h4 class="timer-title">Timer</h4>
+            <div class="timer">
+                <div class="count">25:00</div>
+            </div>
+            <button class="btn-start-timer">Start</button>
+            <button class="btn-restart-timer">Reset</button>
+            <button class="btn-stop-timer">Stop</button>
+        </div>
+        <div class="calendar-board">
+            <h4 class="calendar-title">Check the Holidays</h4>
+            <div class="search">
+                <input type="text" id="enter-country" required>
+                <label for="enter-country" id="label-input">Enter a country</label>
+            </div>
+            <button class="btn-display-holidays">Display</button>
+            <ul class="display-holidays"></ul>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
