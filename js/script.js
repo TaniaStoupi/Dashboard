@@ -288,7 +288,7 @@ UpdateDisplayTimer();
 // Quotable API
 generateQuoteBtn.addEventListener("click",function(e){
 
-    fetch("https://api.quotable.io/random")
+    fetch("https://api.quotable.io/quotes/random")
     .then((response) => response.json())
     .then((data) => (quoteDisplay.innerHTML = "\"" +data.content + "\""
         + "<br> ~ " + data.author
